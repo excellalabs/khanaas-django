@@ -7,6 +7,8 @@ This is an introductory tutorial for learning core Django concepts.  You will be
    - Django 1.8
    - Postgres 9.3
 
+Rather than providing complex instructions for installing these tools, we'll be utilizing Vagrant to easily create a Linux virtual machine that is preconfigured for Django development.
+
 **NOTE**: Installing the dependencies and the khanaas-django virtual environment will consume about 1GB of bandwidth.
 
 ## Dependencies
@@ -15,21 +17,23 @@ This is an introductory tutorial for learning core Django concepts.  You will be
   - Virtualbox download links can be found [here](https://www.virtualbox.org/wiki/Download_Old_Builds_4_3)
     - We had issues getting the recently released Virtualbox 5.0 working with the Ubuntu virtual image used in this workshop.
     - The link above is for the 4.3 version of Virtualbox, which is still being maintained.
+  - Git - You'll need [git](http://git-scm.com/downloads) to clone this repository.
   
 ## Windows Dependencies
 - Windows users may need to install SSH software to get Vagrant working
   - Cygwin should work fine with Vagrant
   - Another easy way to enable SSH is to download [Git](http://git-scm.com/download/win) and:
-    1. Use the Git Bash terminal to use vagrant
+    1. Use the `Git Bash` application to run Vagrant commands OR
     2. Manually set the PATH in cmd.exe before running vagrant: `set PATH=%PATH%;C:\Program Files (x86)\Git\bin`
 
 ## Installation
 1. Clone this repository `git clone https://github.com/m3brown/khanaas-django.git`
-1. Open a terminal/Powershell instance and navigate to the `khanaas-django` directory you just created
+1. Open your terminal/command line tool of choice and navigate to the `khanaas-django` directory you just created
+ - Windows users, make sure to use a terminal that has an SSH client (see Windows Dependencies above)
 1. Run `vagrant up` to create the virtual machine
  - NOTE: This requires about 700MB of bandwidth
  - This will load a lightweight Ubuntu Linux virtual machine with no GUI.  We will interact with it via command line actions.
- - If you don't use khanaas-django.box from the previous step, this step will also download Django, PostgreSQL, and other requirements
+ - This step will also install Django, PostgreSQL, and other requirements
  - Windows users, if you get prompted with a firewall warning, make sure you allow 'private network' access
 
 
