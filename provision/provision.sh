@@ -16,6 +16,7 @@ apt-get update -y
 # Python dev packages
 apt-get install -y build-essential python python-dev python-pip python-virtualenv
 apt-get install -y git
+apt-get install -y vim-python-jedi # vim syntax highlighting, autocompletion
 
 if ! command -v workon; then
     pip install virtualenvwrapper
