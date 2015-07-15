@@ -27,7 +27,7 @@ Rather than providing complex instructions for installing these tools, we'll be 
     2. Manually set the PATH in cmd.exe before running vagrant: `set PATH=%PATH%;C:\Program Files (x86)\Git\bin`
 
 ## Installation
-1. Clone this repository `git clone https://github.com/m3brown/khanaas-django.git`
+1. Clone this repository `git clone https://github.com/excellalabs/khanaas-django.git`
 1. Open your terminal/command line tool of choice and navigate to the `khanaas-django` directory you just created
  - Windows users, make sure to use a terminal that has an SSH client (see Windows Dependencies above)
 1. Run `vagrant up` to create the virtual machine
