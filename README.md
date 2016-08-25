@@ -2,6 +2,12 @@
 
 This is an introductory tutorial for learning core Django concepts.  You will be replicating the functionality of www.khanaas.com, plus additional features to showcase Django strengths such as the ORM and Forms.
 
+## The Tutorial
+
+For step-by-step instructions for creating your own KhanAAS app, continue to the [wiki](https://github.com/excellalabs/khanaas-django/wiki)
+
+## About KhanAAS
+
   - **Technology stack**: 
    - Python 2.7
    - Django 1.8
